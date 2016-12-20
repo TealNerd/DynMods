@@ -1,0 +1,18 @@
+{
+	"modListVersion": 2,
+	"modList": [
+		{
+			"modid": "dynmods",
+			"name": "Dynamic Mod Loader",
+			"description": "Allows for dynamically loaded python based mods using the forge API",
+			"mcversion": "${mcversion}",
+			"version": "${version}",
+			"authorList": [
+				"biggestnerd"
+			],
+			"credits": "Written by biggestnerd aka TealNerd",
+            "dependencies": [ "forge@[${minforgeversion},)" ],
+            "requiredMods": [ "forge@[${minforgeversion},)"]
+		}
+	]
+}
