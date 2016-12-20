@@ -65,21 +65,6 @@ processResources {
     }
 }
 
-def commonManifest = {
-    if (project.hasProperty('extra_fmlat')) {
-        attributes 'FMLAT': project.extra_fmlat
-    }
-}
-
-jar {
-    classifier = project.hasProperty('extra_classifier') ? project.extra_classifier : 'universal'
-    manifest commonManifest
-}
-
-artifacts {
-    archives sourceJar
-}
-
 dependencies {
     compile 'org.python:jython-standalone:2.7.0'
 }
